@@ -12,6 +12,8 @@
   padding: 10px;
 }
 
+/* you may change overflow: hidden to overflow: scroll */
+/* so that users can scroll down to view the many courses */
 .list-image {
   width: 120px;
   height: 120px;
