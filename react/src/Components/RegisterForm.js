@@ -8,6 +8,7 @@ import "./style/RegisterForm.css";
 const RegisterFrom = () => {
   const [errMsg, setErrMsg] = useState("");
   const { register, handleSubmit, errors, watch } = useForm();
+  // below hook seems to be unused
   const [startDate, setBirthdate] = useState(new Date());
 
   const onSubmit = (data) => {
@@ -148,12 +149,22 @@ const RegisterFrom = () => {
             defaultValue={"DEFAULT"}
             ref={register}
           >
-            <option aria-label="Choose your gender ..." value="DEFAULT" disabled>
+            <option
+              aria-label="Choose your gender ..."
+              value="DEFAULT"
+              disabled
+            >
               Choose your gender ...
             </option>
-            <option aria-label="Male" value="Male">Male</option>
-            <option aria-label="Female" value="Female">Female</option>
-            <option aria-label="Prefer not to say" value="Prefer not to say">Prefer not to say</option>
+            <option aria-label="Male" value="Male">
+              Male
+            </option>
+            <option aria-label="Female" value="Female">
+              Female
+            </option>
+            <option aria-label="Prefer not to say" value="Prefer not to say">
+              Prefer not to say
+            </option>
           </select>
         </div>
         <div className="form-group">
